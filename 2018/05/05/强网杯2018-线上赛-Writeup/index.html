@@ -45,7 +45,7 @@
     
     <title>
         
-            标签云 | 
+            强网杯2018 线上赛 Writeup | 
         
         wth&#39;s cyberspace
     </title>
@@ -55,8 +55,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="This is my blog.">
-    <meta name="keywords" content="">
+    <meta name="description" itemprop="description" content="不出意料的被吊打，但是还是学到了很多东西">
+    <meta name="keywords" content=",CTF,Writeup">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -217,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="wth&#39;s cyberspace">
-    <meta name="msapplication-starturl" content="http://yoursite.com/tags/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="wth&#39;s cyberspace">
@@ -232,13 +232,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/tags/">
+    <meta property="og:url" content="http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签云 | wth&#39;s cyberspace">
+    <meta property="og:title" content="强网杯2018 线上赛 Writeup | wth&#39;s cyberspace">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="This is my blog.">
-    
+    <meta property="og:description" content="不出意料的被吊打，但是还是学到了很多东西">
+    <meta property="og:article:tag" content="CTF"> <meta property="og:article:tag" content="Writeup"> 
 
+    
+        <meta property="article:published_time" content="Sat May 05 2018 01:52:09 GMT+0800">
+        <meta property="article:modified_time" content="Sat May 05 2018 02:14:36 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -246,13 +249,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/tags/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/index.html",
+    "headline": "强网杯2018 线上赛 Writeup",
+    "datePublished": "Sat May 05 2018 01:52:09 GMT+0800",
+    "dateModified": "Sat May 05 2018 02:14:36 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "wth",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "永远不要放弃自己的信念"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "wth&#39;s cyberspace",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",CTF,Writeup",
+    "description": "不出意料的被吊打，但是还是学到了很多东西",
+}
+</script>
 
 
     
@@ -288,60 +321,295 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#签到题-5分"><span class="post-toc-number">1.</span> <span class="post-toc-text">签到题-5分</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#杂项-welcome-20分"><span class="post-toc-number">2.</span> <span class="post-toc-text">杂项-welcome 20分</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#密码学-streamgame1-32分"><span class="post-toc-number">3.</span> <span class="post-toc-text">密码学-streamgame1 32分</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#密码学-nextrsa-345分"><span class="post-toc-number">4.</span> <span class="post-toc-text">密码学-nextrsa 345分</span></a></li></ol>
+    </ul>
+    
+
+
+
 
 <!-- Layouts -->
 
-    <!-- Tags Cloud -->
-    <style>
-    #bottom{
-        position: relative;
-    }
+    <!-- Post Module -->
+    <div class="material-post_container">
 
-    @media screen and (max-width: 480px) {
-        .material-tagscloud{
-            margin: 6em 2em 0;
-        }
-    }
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
 
-    .material-tagscloud a{
-        text-decoration:none;
-        padding: 1px 9px;
-        margin: 9px 1px;
-        line-height: 40px;
-        white-space: nowrap;
-        transition: .6s;
-        opacity: .85;
-    }
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    .material-tagscloud a:hover{
-        transition: .6s;
-        opacity: 1;
-        background: #FAFAFA;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    }
-</style>
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
 
-<div class=" material-tagscloud">
-    <div class="material-post mdl-grid">
-        <a href="/tags/CTF/" style="font-size: 35px; color: #212121">CTF</a> <a href="/tags/Writeup/" style="font-size: 25.5px; color: #4b4b4b">Writeup</a> <a href="/tags/信息安全/" style="font-size: 16px; color: #757575">信息安全</a> <a href="/tags/博客搭建/" style="font-size: 16px; color: #757575">博客搭建</a> <a href="/tags/工具/" style="font-size: 16px; color: #757575">工具</a> <a href="/tags/归纳总结/" style="font-size: 16px; color: #757575">归纳总结</a> <a href="/tags/数据结构/" style="font-size: 16px; color: #757575">数据结构</a> <a href="/tags/杂谈/" style="font-size: 16px; color: #757575">杂谈</a> <a href="/tags/游戏引擎/" style="font-size: 16px; color: #757575">游戏引擎</a>
+        
+    
+            <p class="article-headline-p">
+                强网杯2018 线上赛 Writeup
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
     </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>wth</strong>
+        <span>5月 05, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/CTF/">CTF</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Writeup/">Writeup</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=强网杯2018 线上赛 Writeup&url=http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=强网杯2018 线上赛 Writeup&url=http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/index.html&via=wth" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>不出意料的被吊打，但是还是学到了很多东西<br><a id="more"></a></p>
+<h2 id="签到题-5分"><a href="#签到题-5分" class="headerlink" title="签到题-5分"></a>签到题-5分</h2><p>题目描述中给出了flag：flag{welcome_to_qwb}，照填即可</p>
+<h2 id="杂项-welcome-20分"><a href="#杂项-welcome-20分" class="headerlink" title="杂项-welcome 20分"></a>杂项-welcome 20分</h2><p>winhex打开后发现出现了bmp文件头，改后缀名为.bmp，打开后发现是一张三维立体图：</p>
+<p><img src="/2018/05/05/强网杯2018-线上赛-Writeup/杂项-welcome-1.png" alt="三维立体图"> </p>
+<p>按照百度百科上的说法，这种图片是用专门的光栅立体设计软件（如Psdto3d）创造出来的，<br>想要看到原图像，无法通过软件直接还原，需要人眼去按特点方法观看，但这肯定会浪费很多精力。<br>由于这种图看起来立体，本质上是因为图像的元素在人眼的特殊观察方式下产生了叠加，<br>因此只需使用Stegosolve的stereogram solver（立体图解题器），<br>手动设置图像的偏移叠加程度，即可部分还原立体图的信息。</p>
+<p>经过简单的尝试，即可得到flag：QWB{W3lc0me}</p>
+<p><img src="/2018/05/05/强网杯2018-线上赛-Writeup/杂项-welcome-2.png" alt="部分还原的立体图"> </p>
+<h2 id="密码学-streamgame1-32分"><a href="#密码学-streamgame1-32分" class="headerlink" title="密码学-streamgame1 32分"></a>密码学-streamgame1 32分</h2><p>用winhex打开文件，发现是zip文件，解压缩后可以得到两个文件：</p>
+<p><img src="/2018/05/05/强网杯2018-线上赛-Writeup/密码学-streamgame1-1.png" alt="zip里的文件"> </p>
+<p>以下是.py文件的代码：</p>
+<p><img src="/2018/05/05/强网杯2018-线上赛-Writeup/密码学-streamgame1-2.png" alt="主程序代码"> </p>
+<p>可以发现flag长度为25，除去flag{}还有19个字符，这19个字符是二进制数（注意第18行）<br>lfsr这个算法经搜索可能是一个伪随机测试码产生器，<br>由于算法原理未知，且结构复杂，写解密算法成本太高，<br>因此更换思路，<br>由于下面的循环处理过程中只是对flag{}里的二进制位进行运算然后输出结果，<br>因此可以遍历所有二进制结果，将lfsr算法当作黑盒，找出比对结果相同的即为flag</p>
+<p><img src="/2018/05/05/强网杯2018-线上赛-Writeup/密码学-streamgame1-3.png" alt="解密脚本"> </p>
+<p>运行后可以得到结果481387：</p>
+<p><img src="/2018/05/05/强网杯2018-线上赛-Writeup/密码学-streamgame1-4.png" alt="运行结果"> </p>
+<p>转换为二进制，即可得到flag：flag{1110101100001101011} </p>
+<h2 id="密码学-nextrsa-345分"><a href="#密码学-nextrsa-345分" class="headerlink" title="密码学-nextrsa 345分"></a>密码学-nextrsa 345分</h2><p>题目给出远程程序地址：nc 39.107.33.90 9999，在kali中可以进行连接，<br>经过下图中的一些输入尝试，可以明白题目要求我们干什么：</p>
+<p><img src="/2018/05/05/强网杯2018-线上赛-Writeup/密码学-nextrsa-1.png" alt="尝试各种输入"> </p>
+<p>首先，程序产生的是一个随机的长度为3的字符串，然后我们要计算该随机字符串的哈希值，<br>要求该随机数的哈希值满足给定条件，<br>然后我们需要做的是，找出该随机字符串是什么，并将其以hex格式发送至服务器，<br>服务器会对结果进行验证，并给出下一步的任务。</p>
+<p>因此我们可以遍历所有结果，逐一进行比对，然后发送正确结果（然后我就没有尝试了）</p>
+
+        
+    
+
+    
 </div>
 
 
-<script type="text/ls-javascript" id="page-tagcloud-script">
-    var adjustFooter = function() {
-        if( ($('#bottom').offset().top + $('#bottom').outerHeight() ) < $(window).height() ) {
-            var footerBottom = $(window).height() - $('#bottom').outerHeight() - $('#bottom').offset().top;
-            $('#bottom').css('bottom', '-' + footerBottom + 'px');
-        }
-    };
+                
 
-    $(document).ready(function() {
-        adjustFooter();
-    });
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2018/05/05/强网杯2018-线上赛-Writeup/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//https-m8705-github-io.disqus.com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
 </script>
 
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
 
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/05/05/红帽杯2018-线上赛-Writeup/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/05/03/WinHex常见问题及解决方法/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
 
 
 
@@ -531,6 +799,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
