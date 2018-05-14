@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Sun May 06 2018 21:56:15 GMT+0800">
-        <meta property="article:modified_time" content="Thu May 10 2018 01:27:36 GMT+0800">
+        <meta property="article:modified_time" content="Sun May 13 2018 23:02:08 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "http://yoursite.com/2018/05/06/计算机组成原理精解/index.html",
     "headline": "计算机组成原理精解",
     "datePublished": "Sun May 06 2018 21:56:15 GMT+0800",
-    "dateModified": "Thu May 10 2018 01:27:36 GMT+0800",
+    "dateModified": "Sun May 13 2018 23:02:08 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "wth",
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#写作背景"><span class="post-toc-number">1.</span> <span class="post-toc-text">写作背景</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#序言"><span class="post-toc-number">2.</span> <span class="post-toc-text">序言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#从数据中来，到数据中去"><span class="post-toc-number">3.</span> <span class="post-toc-text">从数据中来，到数据中去</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#什么是计算机？"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是计算机？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#计算机的数据表示方法"><span class="post-toc-number">2.</span> <span class="post-toc-text">计算机的数据表示方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#二进制：计算机中的数据表示方法"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">二进制：计算机中的数据表示方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#二进制如何表示数值数据？"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">二进制如何表示数值数据？</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -518,9 +518,9 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>一份计算机组成原理的复习整理<br><a id="more"></a></p>
-<h2 id="写作背景"><a href="#写作背景" class="headerlink" title="写作背景"></a>写作背景</h2><p>计组（计算机组成原理）这门课难学，我觉得很大程度上是因为很多计组的内容都流于表面，没有触及问题本质，<br>一般人（比如我）很容易在深入探究某个组成部分的时候跟丢了，不知道学了这部分有什么用。</p>
+<p>计组（计算机组成原理）这门课难学，我觉得很大程度上是因为很多计组的内容都流于表面，没有触及问题本质，<br>一般人（比如我）很容易在深入探究某个组成部分的时候跟丢了，不知道学了这部分有什么用。</p>
 <p>为了方便复习，我决定按照我自己的理解，写一份清晰易懂的复习资料。</p>
-<h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>计算机（Computer）在我们日常生活中非常常见。<br>从你用的笔记本，到你考试时用的卡西欧计算器，甚至到你家的微波炉，都有计算机的身影。<br>从字面意思上来看，<strong>计算机，是一种可以执行各种运算（Compute）的机器</strong>。</p>
+<h2 id="什么是计算机？"><a href="#什么是计算机？" class="headerlink" title="什么是计算机？"></a>什么是计算机？</h2><p>计算机（Computer）在我们日常生活中非常常见。<br>从你用的笔记本，到你考试时用的卡西欧计算器，甚至到你家的微波炉，都有计算机的身影。<br>从字面意思上来看，<strong>计算机，是一种可以执行各种运算（Compute）的机器</strong>。</p>
 <p>想要了解计算机到底怎么变成现在这个样子的，就要先看看它怎么诞生发展的。</p>
 <p>以前的人很懒，很多事情不想自己干，但是又找不到人帮自己背锅，那怎么办？<br>于是有人想，那就造个能帮自己干活的机器吧。<br>每个人的任务，归结起来都有很多种类。对应也要不同种类的机器。<br>比如你干农活的，就需要农活的机器，你给个织布的机器，我也用不着。</p>
 <p>随着科技发展，这种帮助人们免除枯燥体力劳动的机器都被科学家发明出来了。<br>体力劳动负担是减轻了，但是人类还需要脑力劳动。<br>于是慢慢有人想，要是有机器能帮我们免除脑力劳动呢？</p>
@@ -530,13 +530,13 @@
 <p>算是能算了，但可不可以再改良一下，更方便，更通用，更稳定呢？<br>还真有人发明出来了这种机器，能读取纸质的打孔卡，<br>把打孔卡上打孔的样式，通过编码，转换成数字和运算操作，然后让计算机执行计算。</p>
 <p>结合了布尔代数之后，人们开始明白，计算机不能理解的东西也可以转换成真值和逻辑运算，<br>而逻辑运算也可以在计算机上实现。<br>因此，</p>
 <p><strong>任何需要处理的东西，只要可以经过编码转换成数据和指令，都可以被计算机所理解和处理。</strong></p>
-<p>抽象一点来说，打孔卡上的孔含有<em>+-0数据和指令，我们需要自己编制打孔卡，指挥计算机完成计算任务。<br>其实指令也是一种数据，只不过我们人为规定，<br>把特定的数据（比如特定的孔排列0001）不当成一般的数据，而当成有意义的，需要计算机执行的运算操作。<br>这就是<em>*“编程”</em></em>这一概念第一次出现在世人面前，即通过编写程序（数据和指令的集合）指挥计算机完成任务。</p>
+<p>抽象一点来说，打孔卡上的孔含有数据和指令，我们需要自己编制打孔卡，指挥计算机完成计算任务。<br>其实指令也是一种数据，只不过我们人为规定，<br>把特定的数据（比如特定的孔排列0001）不当成一般的数据，而当成有意义的，需要计算机执行的运算操作。<br>这就是<strong>“编程”</strong>这一概念第一次出现在世人面前，即通过编写程序（数据和指令的集合）指挥计算机完成任务。</p>
 <p>随着计算机不断发展，打孔卡因为效率低被淘汰了，计算机也不再由一个个金属齿轮构成，<br>但唯有一件事是不变的：</p>
-<p><strong>计算机本质上就是一种用来处理数据的辅助工具，它的所有设计都是为了更高效，更方便，更可靠的处理数据</strong>。</p>
+<p><strong>计算机本质上就是一种用来处理数据的辅助工具。它的所有设计都是为了更高效，更方便，更可靠的处理数据</strong>。</p>
 <p>所以很简单，我们输入数据，计算机帮我们处理数据，然后输出我们想要的数据。人类又找到方法偷懒了。</p>
-<h2 id="从数据中来，到数据中去"><a href="#从数据中来，到数据中去" class="headerlink" title="从数据中来，到数据中去"></a>从数据中来，到数据中去</h2><p>前面说过，计算机就是一种处理数据的工具。<br>那么，想要了解计算机是怎么干活（处理数据）的，首先就要对我们想处理的数据有所了解。</p>
+<h2 id="计算机的数据表示方法"><a href="#计算机的数据表示方法" class="headerlink" title="计算机的数据表示方法"></a>计算机的数据表示方法</h2><p>前面说过，计算机就是一种处理数据的工具。<br>那么，想要了解计算机是怎么干活（处理数据）的，首先就要对我们想处理的数据有所了解。</p>
 <p>前面一口一个数字数据的，你很可能弄糊涂了，在这里解释一下，<br>数字指的就是我们日常生活中的一个个数，比如0，1，1/2，-2.5，0.33333，10的10次方，<br>而数据指的是广义上的，对我们使用者而言有意义，且可以被量化或抽象的任何东西，<br>比如人口总数，企业利润率。<br>所以从范围上看，数据是包含数字的。<br>为了表述的通用性，后面一般都会写成：计算机处理数据。</p>
-<p>数据有很多种。数据在经过编码后，都转换成了数字。</p>
+<h4 id="二进制：计算机中的数据表示方法"><a href="#二进制：计算机中的数据表示方法" class="headerlink" title="二进制：计算机中的数据表示方法"></a>二进制：计算机中的数据表示方法</h4><p>数据有很多种。数据在经过编码后，都转换成了数字。</p>
 <p>但是我们需要知道：<strong>一个数字，会因为使用的数制不同，而有不同的表示方法</strong>。<br>比如10进制数13，可以表示成十六进制的D，也可以表示成二进制的1101，<br>而单单一个10，可以表示10进制中的10（也就是日常生活中的10），也可以表示二进制中的2</p>
 <p>这就带来了一个问题：<br>计算机作为一种通用的计算工具，应该不光能处理10进制数字，也能够处理任何进制的数字，<br>但是计算机为了正常完成运算，内部必须要统一地使用一种数制，<br>不可能今天把所有数都转成七进制，明天把所有数都转成九进制。</p>
 <p><strong>因此，为了处理更加广泛的数据，我们需要从众多数制当中选一种，把它当作计算机内部统一的数字表达方式。</strong></p>
@@ -551,8 +551,14 @@
 <p>因此，我们需要思考更好的解决方案。<br>既然这么多电路状态控制起来很复杂，那能不能减少一些电路状态呢？<br>更进一步，电路的最简状态是什么呢？</p>
 <p>很容易想到，最简单的电路状态应该是有电流/电压或没电流/电压，<br>即我们通常所说的通路或断路。可以想想电灯开关，是一样的控制原理。</p>
 <p>通路，断路，这两种状态，正好完美对应了二进制当中的0和1两个数，<br>而且这两种状态比较容易保持，不易受到干扰而发生变化。</p>
-<p><strong>因此，用电路来实现二进制是非常方便而且可靠的。</strong></p>
+<p><strong>因此，对于用电路来实现的计算机而言，采用二进制表示数据是非常方便而且可靠的。</strong></p>
 <p>后来几乎所有的现代计算机，内部也都采用了二进制，当做数据的表示方法。</p>
+<p>在计算机当中，数据有很多种类，文字数据，图片数据等等。但是，</p>
+<p><strong>所有的数据，本质上都可以分成数值数据，和非数值数据。</strong></p>
+<p>顾名思义，<strong>数值数据</strong>就是指可以被测量或计数的数，如电压值大小，多边形的边数；<br>相反的，<strong>非数值数据</strong>就是无法被测量或计数的数据，如一串字符，一首歌曲。</p>
+<p>这时候问题来了，二进制到底怎么表示这些数据呢？</p>
+<p>让我们一步一步来，先研究一下，二进制如何表示数值数据。</p>
+<h4 id="二进制如何表示数值数据？"><a href="#二进制如何表示数值数据？" class="headerlink" title="二进制如何表示数值数据？"></a>二进制如何表示数值数据？</h4><p>数值数据，其实就是各种各样的数字。<br>因此，要研究这个问题，我们就必须先从数学的角度，看看数是怎么分类的。</p>
 
         
     
