@@ -47,7 +47,7 @@
     
     <title>
         
-            红帽杯2018 线上赛 Writeup | 
+            标签: 整理 | 
         
         wth&#39;s cyberspace
     </title>
@@ -57,8 +57,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="真的是打到心态都崩了，黑幕真多。这次简单题我重点做了一下有难度的一些简单题。">
-    <meta name="keywords" content=",CTF,Writeup">
+    <meta name="description" itemprop="description" content="This is my blog.">
+    <meta name="keywords" content="">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="wth&#39;s cyberspace">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/tags/整理/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="wth&#39;s cyberspace">
@@ -234,16 +234,13 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/">
+    <meta property="og:url" content="http://yoursite.com/tags/整理/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="红帽杯2018 线上赛 Writeup | wth&#39;s cyberspace">
+    <meta property="og:title" content="标签: 整理 | wth&#39;s cyberspace">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="真的是打到心态都崩了，黑幕真多。这次简单题我重点做了一下有难度的一些简单题。">
-    <meta property="og:article:tag" content="CTF"> <meta property="og:article:tag" content="Writeup"> 
-
+    <meta property="og:description" content="This is my blog.">
     
-        <meta property="article:published_time" content="Sat May 05 2018 02:06:26 GMT+0800">
-        <meta property="article:modified_time" content="Sat May 05 2018 02:52:27 GMT+0800">
+
     
 
     <!-- The Twitter Card protocol -->
@@ -251,43 +248,13 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/index.html" />
+        <link rel="canonical" href="http://yoursite.com/tags/整理/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/index.html",
-    "headline": "红帽杯2018 线上赛 Writeup",
-    "datePublished": "Sat May 05 2018 02:06:26 GMT+0800",
-    "dateModified": "Sat May 05 2018 02:52:27 GMT+0800",
-    "author": {
-        "@type": "Person",
-        "name": "wth",
-        "image": {
-            "@type": "ImageObject",
-            "url": "/img/avatar.png"
-        },
-        "description": "永远不要放弃自己的信念"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "wth&#39;s cyberspace",
-        "logo": {
-            "@type":"ImageObject",
-            "url": "/img/favicon.png"
-        }
-    },
-    "keywords": ",CTF,Writeup",
-    "description": "真的是打到心态都崩了，黑幕真多。这次简单题我重点做了一下有难度的一些简单题。",
-}
-</script>
 
 
     
@@ -321,285 +288,98 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
-
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
     
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
+    <div class="locate-thumbnail-symbol"></div>
 
-
-    <!-- Left aligned menu below button -->
-    
-    
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#签到题"><span class="post-toc-number">1.</span> <span class="post-toc-text">签到题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#杂项-Not-Only-Wireshark"><span class="post-toc-number">2.</span> <span class="post-toc-text">杂项-Not Only Wireshark</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#密码学-3dlight"><span class="post-toc-number">3.</span> <span class="post-toc-text">密码学-3dlight</span></a></li></ol>
-    </ul>
+    <!-- Pin on top -->
     
 
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
+        
+    
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/07/07/前端探索总结/">前端探索总结</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            整理一下前端收藏夹
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/07/07/前端探索总结/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="wth's avatar">
+            </div>
+            <div>
+                <strong>wth</strong>
+                <span>7月 07, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/技术/">技术</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
 </script>
 
-        
-    
-            <p class="article-headline-p">
-                红帽杯2018 线上赛 Writeup
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>wth</strong>
-        <span>5月 05, 2018</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">devices other</i>
-    <span class="visuallyhidden">devices other</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-    
-        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/">
-    
-</ul>
-
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/CTF/">CTF</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Writeup/">Writeup</a>
-    </ul>
-    
-
-    <!-- Share -->
-    
-        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-        
-            <!-- Busuanzi Views -->
-            <a class="post_share-link" href="#">
-                <li class="mdl-menu__item">
-                    <span id="busuanzi_container_page_pv">
-                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
-                    </span>
-                </li>
-            </a>
-        
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=红帽杯2018 线上赛 Writeup&url=http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=红帽杯2018 线上赛 Writeup&url=http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/index.html&via=wth" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/05/05/红帽杯2018-线上赛-Writeup/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
     
 </div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <p>真的是打到心态都崩了，黑幕真多。这次简单题我重点做了一下有难度的一些简单题。<br><a id="more"></a></p>
-<p>（毕竟太难的我也不会做）</p>
-<h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p>加比赛交流群，查看管理员群名片即可得flag：flag{redhat_welcome}</p>
-<h2 id="杂项-Not-Only-Wireshark"><a href="#杂项-Not-Only-Wireshark" class="headerlink" title="杂项-Not Only Wireshark"></a>杂项-Not Only Wireshark</h2><p>得到一个数据包，上Wireshark，<br>过滤http，发现有请求一些有意思的文件，导出http对象，根据文件MD5进行筛选去重，但这些文件都没什么用。<br>好不容易提取出了一个 miao.jpg ，怀疑是隐写，但是检测了N遍也没发现问题。</p>
-<p><img src="/2018/05/05/红帽杯2018-线上赛-Writeup/1.jpg" alt="miao!"></p>
-<p>后来给了提示：tshark，<br>没听过这名字，百度一下，原来是Linux命令行版的Wireshark，<br>现学现卖，参照 <a href="https://www.cnblogs.com/liun1994/p/6142505.html" target="_blank" rel="noopener">链接</a> 中的用法指导，<br>用下面的命令导出数据包中的所有http请求：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tshark -r tmp.pcapng -Y "http" -T text &gt; test.txt</span><br></pre></td></tr></table></figure>
-<p>然后发现里面的一些请求有问题，不仅请求时间非常集中，而且内容全是3位为一组的16进制数，<br>对这些请求进行筛选后可以得到：</p>
-<p><img src="/2018/05/05/红帽杯2018-线上赛-Writeup/2.png" alt="整理后的异常请求内容"></p>
-<p>根据hex流的长度，猜测应该是一个文件，<br>根据感觉可以发现（？？？）开头的 123404B0304 跟zip压缩包的文件头 <strong>504B0304</strong> 非常接近，<br>尝试修复后果然是一个含有flag的压缩包，<br>尝试回数据包中找解压密码，发现了其中一个特别的http请求：example4.php?key=?id=1128#</p>
-<p>到这步我就卡住了，以为密码是 1128# ，或者是 1128 号的数据包里的内容，<br>结果赛后看别人的Writeup，发现密码居然是 ?id=1128#</p>
-<p>好吧。。。。。。</p>
-<h2 id="密码学-3dlight"><a href="#密码学-3dlight" class="headerlink" title="密码学-3dlight"></a>密码学-3dlight</h2><p>这题真的看得我一脸懵逼，想了一整晚，大概理清了一点思路，但是还是做不出来。<br>放上我自己的代码注释吧，也不知道对不对。</p>
-<p><img src="/2018/05/05/红帽杯2018-线上赛-Writeup/3.png" alt="随便写的注释"></p>
-
-        
-    
-
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-    <!-- 使用 来必力 -->
-<div id="livere-comment">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjI3NS8xMjgxMA==">
-	<script type="text/ls-javascript" id="livere-comment-js">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-       if (typeof LivereTower === 'function') { return; }
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-</div>
-</div>
-<style>
-    #livere-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
-
-                
-            </div>
-
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-        <a href="/2018/05/06/计算机组成原理精解/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-        <a href="/2018/05/05/强网杯2018-线上赛-Writeup/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
-        </div>
-    </div>
-
 
 
                     
@@ -788,14 +568,6 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
-
-                    
-                        <!-- Footer Top Button -->
-                        <div id="back-to-top" class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
 
                     
 
